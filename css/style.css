@@ -259,8 +259,8 @@ color: var(--bg-color);
     background: transparent;
     /* border: 2px solid red;     */
     transition: 3s;
-    opacity: .90;
-    border-radius: 50%;
+    opacity: .0999;
+    border-radius: 90%;
  }
 
  .home-imgHover:hover {
