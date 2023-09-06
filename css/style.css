@@ -80,7 +80,7 @@ body {
 
 
 section {
-    min-height: 100vh;
+    height: 980px;
     padding: 10rem 9% 2rem;
 }
 
@@ -88,7 +88,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
-    /* background: url('D:\Projetos\Portifolio\images\eu.jpg') no-repeat; */
+    /* background: url('images/eu.jpg') no-repeat; */
     background-size: cover;
     background-position: center;
 }
@@ -252,13 +252,15 @@ color: var(--bg-color);
 
  .home-imgHover {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 250px;
+    right: 100px;
     width: 45%;
-    height: 100%;
+    height: 45%;
     background: transparent;
     /* border: 2px solid red;     */
     transition: 3s;
+    opacity: .90;
+    border-radius: 50%;
  }
 
  .home-imgHover:hover {
@@ -297,7 +299,8 @@ span {
 }
 
 .about-img img {
-    width: 90%;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
     border: .2rem solid var(--main-color); 
 }
@@ -518,7 +521,7 @@ span {
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-    width: 50%;
+    width: 80%;
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
@@ -539,9 +542,12 @@ span {
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-    width: 80%;
+    width: 95%;
 }
 
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+    width: 95%;
+}
 
 .contact {
     min-height: auto;
@@ -880,3 +886,19 @@ span {
         width: 0;
     }
 } */
+
+.language-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente o conteúdo na div */
+}
+
+.language-selector a {
+    text-decoration: none;
+}
+
+.language-selector img {
+    width: 30px; /* Defina a largura desejada para as imagens */
+    align-self: flex-start; /* Alinha a imagem à esquerda */
+    margin-right: 10px; /* Adicione margem à direita para espaço entre as imagens (opcional) */
+}

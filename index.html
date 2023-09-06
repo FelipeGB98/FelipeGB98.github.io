@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -11,14 +14,20 @@
     <header class="header">
         <a href="#" class="logo">Felipe.<span class="animate" style="--i:1;"></span></a>
 
-        <div class="bx bx-menu" i="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <!-- <div class="bx bx-menu" i="menu-icon"><span class="animate" style="--i:2;"></span></div> -->
+
+        <!-- Adicione botões de seleção de idioma -->           
+        <div class="language-selector">
+            <!-- <a href="#" id="pt-btn" ><img src="images/brasil.png"></img></a> -->
+            <!-- <a href="#" id="en-btn"><img src="images/estados-unidos.png"></img></a>       -->
+        </div>
 
         <nav class="navbar">
-            <a href="#home">Home</a>
+            <a href="#">Home</a> <!-- #home  -->
             <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contact</a>            
 
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
@@ -31,22 +40,27 @@
             <div class="text-animated">
                 <h3>Developer</h3>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore quisquam voluptate consequatur ducimus quas quos enim maiores reiciendis mollitia vitae nam asperiores adipisci inventore, reprehenderit porro natus.</p>
+            <p>Software Engineering student passionate about games and technologies, which made me enter the world of programming. I am constantly looking for learning, knowledge exchange, new connections and great challenges.</p>
        
             <div class="btn-box">
-                <a href="#" class="btn">Hire Me</a>
-                <a href="#" class="btn">Let´s Talk</a>
+                <a href="https://www.linkedin.com/in/FelipeGB98"            target="_blank" class="btn">Hire Me</a>
+                <a href="https://api.whatsapp.com/send?phone=5551994291091" target="_blank" class="btn">Let´s Talk</a>
             </div>
         </div>
         
         <!-- home section -->
         <div class="home-sci">
-            <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-github.svg"></img></a>
-            <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-linkedin-square.svg"></img></a>
-            <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-instagram.svg"></img></a>
+            <!-- <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-github.svg"></img></a> -->
+            <a href="https://github.com/FelipeGB98"  target="_blank"><i class='bx bxl-github'></i></a>           
+            <!-- <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-linkedin-square.svg"></img></a> -->         
+            <a href="https://www.linkedin.com/in/FelipeGB98" target="_blank"><i class='bx bxl-linkedin'></i></a>      
+            <!-- <a href="#"><img src="D:\Projetos\Portifolio\images\bxl-instagram.svg"></img></a> -->
+            <a href="https://api.whatsapp.com/send?phone=5551994291091" target="_blank"><i class='bx bxl-whatsapp' ></i></a>   
         </div>
 
-        <div class="home-imgHover"></div>
+        <div class="home-imgHover">
+            <img src="images/fundo.jpeg" alt="">
+        </div>
         </section>
 
         <!-- about section design -->        
@@ -54,15 +68,15 @@
             <h2 class="heading">About <span>Me</span></h2>
 
             <div class="about-img">
-                <img src="D:\Projetos\Portifolio\images\eu.jpg" alt="">
+                <img src="images/perfil.jpeg" alt="">
                 <span class="circle-spin"></span>
             </div>
 
             <div class="about-content">
                 <h3>Developer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non suscipit accusamus 
-                    amet saepe quisquam vero omnis, facere voluptas modi sint perspiciatis nulla
-                     nesciunt inventore fugiat! Accusantium, consequatur aliquid!</p>
+                <p>Software Engineering Student.
+                    Experience with FullStack development (Java) and in your spare time, watching series or learning new technologies.                    
+                    I am constantly looking for learning, knowledge exchange, new connections and great challenges.</p>
             </div>
 
             <div class="btn-box btns">
@@ -81,16 +95,20 @@
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><img src="D:\Projetos\Portifolio\images\bx-calendar.svg" alt="">2020 - 2021</div>
+                                <div class="year"><i class='bx bx-calendar'> 2020 - 2022 </i></div>
                                 <h3>Software Engennier - PUCRS</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis incidunt iusto neque distinctio possimus cumque ut cum accusamus quam.</p>
+                                <br>
+                                <p>A course for those who want to work with architecture and software development process.
+                                    Graduates of this course stand out in the job market for their knowledge of the software development process, which enables them to use IT processes, methods and tools to systematically and effectively produce robust and quality software.</p>
                             </div>
                         </div>
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'>2020 - 2021</i></div>
-                                <h3>Software Engennier - PUCRS</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis incidunt iusto neque distinctio possimus cumque ut cum accusamus quam.</p>
+                                <div class="year"><i class='bx bx-calendar'> 2022 - Until Now</i></div>
+                                <h3>Software Analysis and Development - Unisinos</h3>
+                                <br>
+                                <p>
+                                    Develop IT projects with a focus on software analysis and development on multiple platforms, as well as creative and systemic thinking to run projects and systems.</p>
                             </div>
                         </div>
                         
@@ -104,23 +122,31 @@
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'>2020 - 2021</i></div>
-                                <h3>full stack</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis incidunt iusto neque distinctio possimus cumque ut cum accusamus quam.</p>
+                                <div class="year"><i class='bx bx-calendar'> January 2020 - October 2020</i></div>
+                                <h3>Technical Support - Dufrio Refrigeração</h3>     
+                                <br>                         
+                                <p>User service and technical support, analyze improvements.
+                                     Track any impact maintenance and monitor virtual machine structures.</p>
                             </div>
                         </div>
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'>2020 - 2021</i></div>
-                                <h3>full stack</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis incidunt iusto neque distinctio possimus cumque ut cum accusamus quam.</p>
+                                <div class="year"><i class='bx bx-calendar'> December 2021 -  February 2022</i></div>
+                                <h3>Trainee - OrderBy Sistemas</h3>          
+                                <br>             
+                                <p>Assist in accessing the customer database and adjusting information,<br>
+                                    developing routines, improvements and repairs requested by users of the company's own system.</p>
                             </div>
                         </div>
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'>2020 - 2021</i></div>
-                                <h3>full stack</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit veritatis incidunt iusto neque distinctio possimus cumque ut cum accusamus quam.</p>
+                                <div class="year"><i class='bx bx-calendar'> February 2022 - April 2023</i></div>
+                                <h3>Junior Developer - OrderBy Sistemas</h3>
+                                <br>
+                                <p>FullStack Java Developer,<br>
+                                Develop routines and repairs and improvements requested by users.
+                                Use of Spring Boot and API.
+                                Participation in calls, Daily's and Sprints</p>                                                           
                             </div>
                         </div>
                     </div>
@@ -148,7 +174,7 @@
                             </div>
 
                             <div class="progress">
-                                <h3>JavaScript <span>50%</span></h3>
+                                <h3>JavaScript <span>80%</span></h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
@@ -182,7 +208,12 @@
                             </div>
 
                             <div class="progress">
-                                <h3>CSS <span>80%</span></h3>
+                                <h3>Kanban <span>95%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Agile <span>95%</span></h3>
                                 <div class="bar"><span></span></div>
                             </div>
                         </div>
