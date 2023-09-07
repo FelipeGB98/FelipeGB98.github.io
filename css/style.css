@@ -51,6 +51,19 @@ body {
     font-size: 2.5rem;
     color:var(--text-color);
     font-weight: 600;
+    display: flex; /* Torna o elemento .logo um container flexível */
+    align-items: center; /* Alinha verticalmente os elementos dentro de .logo */
+}
+
+.language-selector {
+    display: flex;
+    align-items: center; /* Alinha verticalmente as bandeiras com a palavra "Felipe" */
+    gap: 10px; /* Espaçamento entre as bandeiras */
+}
+
+.language-selector img {
+    width: 20px; /* Largura das bandeiras */
+    height: auto; /* Altura ajustável para manter a proporção */
 }
 
 /* .navbar {
@@ -252,15 +265,23 @@ color: var(--bg-color);
 
  .home-imgHover {
     position: absolute;
-    top: 250px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    top: 0px;
     right: 100px;
     width: 45%;
-    height: 45%;
+    height: 100%;
     background: transparent;
     /* border: 2px solid red;     */
     transition: 3s;
     opacity: .0999;
-    border-radius: 90%;
+    
+ }
+
+ .home-imgHover img {
+    border-radius: 4%;
+    width: 100%;
+    height: 100%;
  }
 
  .home-imgHover:hover {
