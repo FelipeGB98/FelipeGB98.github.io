@@ -571,8 +571,7 @@ span {
 }
 
 .contact {
-    min-height: auto;
-    padding-bottom: 7rem;
+    height: 880px;
 }
 
 .contact form {
@@ -912,14 +911,17 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Centraliza verticalmente o conteúdo na div */
+    cursor: pointer;
 }
 
 .language-selector a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .language-selector img {
     width: 30px; /* Defina a largura desejada para as imagens */
     align-self: flex-start; /* Alinha a imagem à esquerda */
     margin-right: 10px; /* Adicione margem à direita para espaço entre as imagens (opcional) */
+    cursor: pointer;
 }

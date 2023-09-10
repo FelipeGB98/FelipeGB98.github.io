@@ -8,6 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
+
+<div id="divEnglish" style="display: block;">
 <body>
 
     <!-- header  -->
@@ -29,8 +31,8 @@
 
         <!-- Adicione botões de seleção de idioma -->           
         <div class="language-selector">
-            <a href="#" language="portuguese" class="active"><img src="images/brasil.png"           alt="portuguese" onclick="changeLanguage('portuguese')"></img></a>
-            <a href="#" language="english">                  <img src="images/estados-unidos.png"   alt="english"    onclick="changeLanguage('english')"></img></a>      
+            <a href="#" language="portuguese"   style="cursor: pointer;"><img src="images/brasil.png"           alt="portuguese" onclick="toggleDivVisibility('portuguese')" title="Portuguese"></img></a>
+            <a href="#" language="english"      style="cursor: pointer;"><img src="images/estados-unidos.png"   alt="english"    onclick="toggleDivVisibility('english')"    title="English"></img></a>      
         </div>
     </header>
 
@@ -38,7 +40,7 @@
         <div class="home-content">
             <h1>Hi, I'm <span>Felipe Garcia</span></h1>
             <div class="text-animated">
-                <h3>Developer</h3>
+                <h3>Developer</h3>                
             </div>
             <p>Software Engineering student passionate about games and technologies, which made me enter the world of programming. I am constantly looking for learning, knowledge exchange, new connections and great challenges.</p>
        
@@ -122,7 +124,7 @@
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'> January 2020 - October 2020</i></div>
+                                <div class="year"><i class='bx bx-calendar'> Janeiro 2020 - Outubro 2020</i></div>
                                 <h3>Technical Support - Dufrio Refrigeração</h3>     
                                 <br>                         
                                 <p>User service and technical support, analyze improvements.
@@ -131,7 +133,7 @@
                         </div>
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'> December 2021 -  February 2022</i></div>
+                                <div class="year"><i class='bx bx-calendar'> Dezembro 2021 -  Fevereiro 2022</i></div>
                                 <h3>Trainee - OrderBy Sistemas</h3>          
                                 <br>             
                                 <p>Assist in accessing the customer database and adjusting information,<br>
@@ -140,7 +142,7 @@
                         </div>
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bx-calendar'> February 2022 - April 2023</i></div>
+                                <div class="year"><i class='bx bx-calendar'> Fevereiro 2022 - Abril 2023</i></div>
                                 <h3>Junior Developer - OrderBy Sistemas</h3>
                                 <br>
                                 <p>FullStack Java Developer,<br>
@@ -275,4 +277,278 @@
     
     <script src="js/script.js"></script>
 </body>
+</div>
+<div id="divPortuguese" style="display: none;">
+    <body>
+    
+        <!-- header  -->
+        <header class="header">
+            <a href="#" class="logo">Felipe.<span class="animate" style="--i:1;"></span></a> 
+    
+            <!-- <div class="bx bx-menu" i="menu-icon"><span class="animate" style="--i:2;"></span></div> -->
+    
+            <nav class="navbar">
+                <a href="#">Home</a> <!-- #home  -->
+                <a href="#sobre">Sobre</a>
+                <a href="#educacao">Educação</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>            
+    
+                <span class="active-nav"></span>
+                <span class="animate" style="--i:2;"></span>
+            </nav>
+    
+            <!-- Adicione botões de seleção de idioma -->           
+            <div class="language-selector">
+                <a href="#" language="portuguese" style="cursor: pointer;"><img src="images/brasil.png"           alt="portuguese" onclick="toggleDivVisibility('portuguese')" title="Portuguese"></img></a>
+                <a href="#" language="english"    style="cursor: pointer;"><img src="images/estados-unidos.png"   alt="english"    onclick="toggleDivVisibility('english')"    title="English"></img></a>      
+            </div>
+        </header>
+    
+        <section class="home">
+            <div class="home-content">
+                <h1>Olá, eu sou <span>Felipe Garcia</span></h1>
+                <div class="text-animated">
+                    <h3>Desenvolvedor</h3>                
+                </div>                
+                    <p>Estudante de Engenharia de Software apaixonado por games e tecnologias, o que me fez ingressar no mundo da programação. Estou constantemente em busca de aprendizado, troca de conhecimento, novas conexões e grandes desafios.</p>
+                <div class="btn-box">
+                    <a href="https://www.linkedin.com/in/FelipeGB98"            target="_blank" class="btn">Contrate-me</a>
+                    <a href="https://api.whatsapp.com/send?phone=5551994291091" target="_blank" class="btn">Conversar</a>
+                </div>
+            </div>
+            
+            <!-- home section -->
+            <div class="home-sci">
+                
+                <a href="https://github.com/FelipeGB98"                     target="_blank"><i class='bx bxl-github'></i></a>           
+    
+                <a href="https://www.linkedin.com/in/FelipeGB98"            target="_blank"><i class='bx bxl-linkedin'></i></a>      
+    
+                <a href="https://api.whatsapp.com/send?phone=5551994291091" target="_blank"><i class='bx bxl-whatsapp'></i></a>   
+            </div>
+    
+            <div class="home-imgHover">
+                <img src="images/fundo.jpeg" alt="">
+            </div>
+            </section>
+    
+            <!-- about section design -->        
+            <section class="about" id="sobre">
+                <h2 class="heading">Sobre <span>Mim</span></h2>
+    
+                <div class="about-img">
+                    <img src="images/perfil.jpeg" alt="">
+                    <span class="circle-spin"></span>
+                </div>
+    
+                <div class="about-content">
+                    <h3>Desenvolvedor</h3>
+                    <p>Estudante de Engenharia de Software.
+                        Experiência com desenvolvimento FullStack (Java) e nas horas vagas, assistindo séries ou aprendendo novas tecnologias.
+                        Estou constantemente em busca de aprendizado, troca de conhecimento, novas conexões e grandes desafios.</p>
+                </div>
+    
+                <div class="btn-box btns">
+                    <a href="pdf/FelipeGarcia.pdf" target="_blank" class="btn">Curríulo</a>
+                </div>
+            </section>
+    
+            <!-- Education -->
+            <section class="education" id="educacao">
+                <h2 class="heading">Minha <span>Jornada</span></h2>
+    
+                <div class="education-row">
+                    <div class="education-column">
+                        <h3 class="title">Educação</h3>
+    
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bx-calendar'> 2020 - 2022 </i></div>
+                                    <h3>Engenharia de Software - PUCRS</h3><br>
+                                    <p>Um curso para quem quer trabalhar com arquitetura e processo de desenvolvimento de software.
+                                        Os egressos deste curso se destacam no mercado de trabalho pelo conhecimento do
+                                         processo de desenvolvimento de software, o que lhes permite utilizar processos,
+                                          métodos e ferramentas de TI para produzir de forma sistemática e eficaz software 
+                                          robusto e de qualidade.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bx-calendar'> 2022 - Atualmente</i></div>
+                                    <h3>Analise de Software e desenvolvimento - Unisinos</h3><br>
+                                    <p>
+                                        Desenvolver projetos de TI com foco em análise e desenvolvimento de software em 
+                                        múltiplas plataformas, além de pensamento criativo e sistêmico para execução de 
+                                        projetos e sistemas.
+                                    </p>                                
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Experience -->
+                    <div class="education-column">
+                        <h3 class="title">Experiências</h3>
+    
+                        <div class="education-box">
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bx-calendar'> Janeiro 2020 - Outubro 2020</i></div>
+                                    <h3>Suporte Técnico - Dufrio Refrigeração</h3>     
+                                    <br>                         
+                                    <p>Atendimento ao usuário e suporte técnico, analisar melhorias.
+                                        Acompanhe qualquer impacto na manutenção e monitore as estruturas das máquinas virtuais.</p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bx-calendar'> Dezembro 2021 -  Fevereiro 2022</i></div>
+                                    <h3>Estagiário - OrderBy Sistemas</h3>          
+                                    <br> 
+                                    <p>Ajudar no acesso ao banco de dados do cliente e ajuste de informações,<br>
+                                        desenvolvendo rotinas, melhorias e reparos solicitados pelos usuários do sistema próprio da empresa.</p>
+                                </div>
+                            </div>
+                            <div class="education-content">
+                                <div class="content">
+                                    <div class="year"><i class='bx bx-calendar'> Fevereiro 2022 - Abril 2023</i></div>
+                                    <h3>Desenvolvedor Junior - OrderBy Sistemas</h3>
+                                    <br>
+                                    <p>Desenvolvedor Java FullStack,<br>
+                                        Desenvolver rotinas e reparos e melhorias solicitadas pelos usuários.
+                                        Uso de Spring Boot e API.
+                                        Participação em call, Daily's e Sprints</p>                                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Skills Section -->
+            <section class="skills" id="habilidades">
+                <h2 class="heading">Minhas <span>Habilidades</span></h2>
+                <div class="skills-row">
+                    <div class="skills-column">
+                        <h3 class="title">Linguagens de Programação</h3>
+    
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <div class="progress">
+                                    <h3>HTML <span>90%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>CSS <span>80%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>JavaScript <span>80%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>Java <span>90%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>React <span>40%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>Angular <span>20%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Professional Skills -->
+                    <div class="skills-column">
+                        <h3 class="title">Conhecimentos Profissionais</h3>
+    
+                        <div class="skills-box">
+                            <div class="skills-content">
+                                <div class="progress">
+                                    <h3>Desenvolvimento Web <span>90%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>Kanban <span>95%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+    
+                                <div class="progress">
+                                    <h3>Agile <span>95%</span></h3>
+                                    <div class="bar"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- contact section -->
+            <section class="contact" id="contato">
+                <h2 class="heading">Contate <span>Me!</span></h2>
+    
+                <form action="#">
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="text" placeholder="Nome Completo" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Endereço de Email" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+    
+    
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input type="number" placeholder="Numero de Telefone" required>
+                            <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Assunto do Email" required>
+                            <span class="focus"></span>
+                        </div>
+                    </div>
+    
+                    <div class="textarea-field">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem" required></textarea>
+                        <span class="focus"></span>
+                    </div>
+    
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn" >Enviar</button>
+                    </div>
+                </form>
+            </section>
+    
+            <!-- footer design  -->
+            <footer class="footer">
+                <div class="footer-text">
+                    <p>Copyright &copy; 2023 by Felipe  | All Rights Reserved </p>
+                </div>
+    
+                <div class="footer-iconTop">
+                    <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+                </div>
+            </footer>
+            
+        
+        <script src="js/script.js"></script>
+    </body>
+    </div>
 </html>
