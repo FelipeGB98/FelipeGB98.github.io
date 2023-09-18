@@ -777,22 +777,22 @@ span {
         z-index: -1;
         transition: .25s ease;
         transition-delay: 0s;
-    }
+    } */
 
-    .navbar.active-nav .active-nax{
+    /* .navbar.active-nav .active-nax{
         left: 0;
         transition-delay: .25s;
         
     }
 
-    .navbar a {
+    /* .navbar a {
         display: block;
         font-size: 2rem;
         margin: 3rem 0;
         transform: translate(-20rem);
         transition: .25s ease;
         transition-delay: 0s;
-    }
+    } */
 
     .navbar.active a {
         transform: translateX(0);
